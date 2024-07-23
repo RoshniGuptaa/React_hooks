@@ -1,5 +1,7 @@
 import './App.css';
-import DataFetching from './components-useEffect/DataFetching';
+import React from 'react'
+//import DataFetching from './components-useEffect/DataFetching';
+import ComponentC from './useContext/ComponentC';
 //import HookMouse from './components-useEffect/HookMouse';
 //import MouseContainer from './components-useEffect/MouseContainer';
 // import ClassCounterOne from './components-useEffect/ClassCounterOne';
@@ -9,6 +11,8 @@ import DataFetching from './components-useEffect/DataFetching';
 // import HookCounterThree from './components/HookCounterThree';
 // import HookCounterTwo from './components/HookCounterTwo';
 
+export const UserContext=React.createContext()
+export const ChannelContext=React.createContext()
 function App() {
   return (
     <div className="App">
@@ -23,7 +27,14 @@ function App() {
       {/* <HookMouse></HookMouse> */}
       {/* <MouseContainer/> */}
       {/* ************************************---Fetching data with hooks-----****************************************************** */}
-      <DataFetching></DataFetching>
+      {/* <DataFetching></DataFetching> */}
+
+      {/* ================================================Use Conext =========================================================*/}
+      <UserContext.Provider value={'Roshni'}>
+         <ChannelContext.Provider value={'roshni hooks'}>
+              <ComponentC></ComponentC>
+         </ChannelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
