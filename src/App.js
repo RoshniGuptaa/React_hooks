@@ -1,6 +1,9 @@
 import './App.css';
 import React from 'react'
-import ParentComponent from './useCallback/ParentComponent';
+//import ParentComponent from './useCallback/ParentComponent';
+//import Counter from './useMemo/Counter';
+//import FocusInput from './useRef/FocusInput';
+import HookTimer from './useRef/HookTimer';
 //import CounterOne from './useReducer/CounterOne';
 //import CounterTwo from './useReducer/CounterTwo';
 //import DataFetching from './useReducer/DataFetching';
@@ -47,7 +50,13 @@ function App() {
        {/* <DataFetching></DataFetching> */}
 
        {/* --------------------------useCallBack------------------------------------ */}
-       <ParentComponent></ParentComponent>
+       {/* <ParentComponent></ParentComponent> */}
+
+       {/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@------------useMemo-------------@@@@@@@@@@@@@@@@@@@@@@ */}
+       {/* <Counter></Counter> */}
+       {/* -----------------useRef---------------- */}
+       {/* <FocusInput></FocusInput> */}
+       <HookTimer></HookTimer>
 
     </div>
   );
