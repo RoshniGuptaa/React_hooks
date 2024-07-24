@@ -1,8 +1,9 @@
 import './App.css';
 import React from 'react'
+import ParentComponent from './useCallback/ParentComponent';
 //import CounterOne from './useReducer/CounterOne';
 //import CounterTwo from './useReducer/CounterTwo';
-import DataFetching from './useReducer/DataFetching';
+//import DataFetching from './useReducer/DataFetching';
 //import DataFetching from './components-useEffect/DataFetching';
 //import ComponentC from './useContext/ComponentC';
 //import HookMouse from './components-useEffect/HookMouse';
@@ -43,7 +44,10 @@ function App() {
       {/* <CounterOne></CounterOne> */}
       {/* <CounterTwo></CounterTwo> */}
 
-       <DataFetching></DataFetching>
+       {/* <DataFetching></DataFetching> */}
+
+       {/* --------------------------useCallBack------------------------------------ */}
+       <ParentComponent></ParentComponent>
 
     </div>
   );
