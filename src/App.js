@@ -1,7 +1,10 @@
 import './App.css';
 import React from 'react'
+//import CounterOne from './useReducer/CounterOne';
+//import CounterTwo from './useReducer/CounterTwo';
+import DataFetching from './useReducer/DataFetching';
 //import DataFetching from './components-useEffect/DataFetching';
-import ComponentC from './useContext/ComponentC';
+//import ComponentC from './useContext/ComponentC';
 //import HookMouse from './components-useEffect/HookMouse';
 //import MouseContainer from './components-useEffect/MouseContainer';
 // import ClassCounterOne from './components-useEffect/ClassCounterOne';
@@ -29,12 +32,19 @@ function App() {
       {/* ************************************---Fetching data with hooks-----****************************************************** */}
       {/* <DataFetching></DataFetching> */}
 
-      {/* ================================================Use Conext =========================================================*/}
-      <UserContext.Provider value={'Roshni'}>
+      {/* ================================================Use Context =========================================================*/}
+      {/* <UserContext.Provider value={'Roshni'}>
          <ChannelContext.Provider value={'roshni hooks'}>
               <ComponentC></ComponentC>
          </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+
+      {/* ...............................................UseReducer.................................... */}
+      {/* <CounterOne></CounterOne> */}
+      {/* <CounterTwo></CounterTwo> */}
+
+       <DataFetching></DataFetching>
+
     </div>
   );
 }
