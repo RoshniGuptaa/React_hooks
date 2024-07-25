@@ -3,7 +3,9 @@ import React from 'react'
 //import ParentComponent from './useCallback/ParentComponent';
 //import Counter from './useMemo/Counter';
 //import FocusInput from './useRef/FocusInput';
-import HookTimer from './useRef/HookTimer';
+//import HookTimer from './useRef/HookTimer';
+import DocumentTitleOne from './custom hooks/DocumentTitleOne';
+import DocumentTitleTwo from './custom hooks/DocumentTitleTwo';
 //import CounterOne from './useReducer/CounterOne';
 //import CounterTwo from './useReducer/CounterTwo';
 //import DataFetching from './useReducer/DataFetching';
@@ -56,7 +58,11 @@ function App() {
        {/* <Counter></Counter> */}
        {/* -----------------useRef---------------- */}
        {/* <FocusInput></FocusInput> */}
-       <HookTimer></HookTimer>
+       {/* <HookTimer></HookTimer> */}
+
+       {/* ------------------Use custom hooks */}
+       <DocumentTitleOne></DocumentTitleOne>
+       <DocumentTitleTwo></DocumentTitleTwo>
 
     </div>
   );
